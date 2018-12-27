@@ -1064,6 +1064,7 @@ class OVSSwitch( Switch ):
            reconnectms: max reconnect timeout in ms (0/None for default)
            stp: enable STP (False, requires failMode=standalone)
            batch: enable batch startup (False)"""
+        print "Custom switch"
         Switch.__init__( self, name, **params )
         self.failMode = failMode
         self.datapath = datapath
